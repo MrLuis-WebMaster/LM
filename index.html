@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="build/css/app.css">
+    <link rel="icon" href="build/img/icon.webp">
+    <title>LM</title>
+</head>
+<body>
+    <header class="Header">
+        <div class="contenedor contenido-header">
+            <a class="img" href="/">
+                <img src="build/img/logo-04.webp" alt="Logo personal">
+            </a>
+            <button class="ham" type="button">   
+              <span class="br-1"></span>
+              <span class="br-2"></span>
+              <span class="br-3"></span>
+            </button>          
+            <nav class="Navegacion">
+                <a href="#Sobre">About me</a>
+                <a href="#skills">Skills</a>
+                <a href="#galeria">Gallery</a>
+                <a href="#Contacto">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <div class="video">
+        <div class="overlay">
+            <div class="contenedor contenido-video" >
+                <h2 class="animate__animated animate__backInUp">
+                    Barista & DeveloperJr
+                    <span>Colombia, Antioquia, ¡que chimba Medallo!</span>
+                </h2>
+            </div>
+        </div>
+        <video controls autoplay muted loop preload="none">
+            <source src="video/video02.mp4" type="video/mp4">
+            <!--<source src="video/video01.mp4" type="video/webm">-->    </video>
+    </div>
+
+    <div class="boton-whatsapp">
+        <a class="whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=573214363313&text=Hola!%20%F0%9F%91%8D">
+            <img src="src/img/whatsapp.svg" alt="">
+        </a>
+    </div>
+
+    <div class="Box-background"></div>
+
+    <div id="Sobre" class="Sobre contenedor">
+        <div class="imagen">
+            <img src="build/img/Luis.jpeg" alt="Sobre mi">
+        </div>
+        <div class="info">
+            <h2 class="titulo animate__backOutRight">
+                My name is Luis Martinez...
+            </h2>
+            <p class="fecha">
+                Antioquia,Colombia,Medellin.
+            </p>
+            <p class="parrafo">
+                I am a cheerful, kind and committed person.
+                I dedicate myself to barismo and programming,
+                I want to show that coffee and codes can be put together.
+            </p>
+
+        </div>
+    </div>
+
+    <section id="skills" class="skills">
+        <h3>Skills</h3>
+        <div class="contenedor contenedor-skills">
+            <div class="tarjeta barismo bg-1">
+                <p class="nombre-skill">Barismo</p>
+                <ul class="lista">    
+                    <li>| <span>Basic knowledge of coffee production, processing and roasting</span></li>
+                    <li>| <span>Advanced knowledge in different methods of extraction and preparation of coffee</span> </li>
+                    <li>| <span>customer service</span> </li>
+                    <li>| <span>leadership</span></li>
+                    <li>| <span>Basic instruction on coffee consumption</span> </li>
+                    <li>| <span>Latte art</span> </li>
+                    <li>| <span>Intermediate command of English</span> </li>
+
+                </ul>
+            </div>
+            <div class="tarjeta programacion bg-2">
+                <p class="nombre-skill">DeveloperJr</p>
+                <ul class="lista">
+                    <li>| <span>Programming Fundamentals</span> </li>
+                    <li>| <span>Git and github knowledge</span> </li>
+                    <li>| <span>HTML,CSS,JavaScript</span> </li>
+                    <li>| <span>SASS preprocessor</span> </li>
+                    <li>| <span>PHP</span> </li>
+                    <li>| <span>SQL & MySQL</span> </li>
+                    <li>| <span>TeamWork</span> </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="galeria contenedor">
+        <h3>Gallery</h3>
+        <ul class="galeria-imagenes"></ul>
+    </section>
+
+    <section class="container">
+        <div class="form contenedor">
+          <div class="contact-info">
+            <h3 class="title">Let's get in touch</h3>
+            <p class="text">
+              I leave you the necessary data and 
+              links so that you can communicate with me.
+            </p>
+  
+            <div class="info">
+              <div class="information">
+                <img src="build/img/location.webp" class="icon" alt="" />
+                <p>Medellin</p>
+              </div>
+              <div class="information">
+                <img src="build/img/email.webp" class="icon" alt="" />
+                <p>mr.luiswebmaster@gmail.com</p>
+              </div>
+              <div class="information">
+                <img src="build/img/phone.webp" class="icon" alt="" />
+                <p>(+57) 321-436-3313</p>
+              </div>
+            </div>
+            <div class="social-media">
+              <p>Connect with us :</p>
+              <div class="social-icons">
+                <a target="_blank" href="https://www.instagram.com/lgmu27/">
+                  <img class="icon" src="build/img/instagram.svg" alt="">
+                </a>
+                <a target="_blank" href="https://www.facebook.com/martinezurrieta/">
+                  <img class="icon" src="build/img/facebook.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+  
+          <div id="Contacto" class="contact-form">
+            <form class="formulario" method="POST" action="https://formspree.io/f/xzbypbzp" >
+              <fieldset>
+                <h3 class="title">Contact us</h3>
+                <div class="input-container">
+                  <input type="text" name="name" class="input" id="nombre" />
+                  <label>Username</label>
+                </div>
+                <div class="input-container">
+                  <input type="email" name="email" class="input" id="email" />
+                  <label for="">Email</label>
+                </div>
+                <div class="input-container">
+                  <input type="tel" name="phone" class="input" id="celular" />
+                  <label for="">Phone</label>
+                </div>
+                <div class="input-container textarea">
+                  <textarea name="message" class="input" id="mensaje" ></textarea>
+                  <label>Message</label>
+                </div>
+                <input type="submit" value="Send" class="btn" />
+              </fieldset>
+            </form>
+          </div>
+        </div>
+    </section>
+  
+
+    <footer class="footer">
+        <p>Luis Martinez. All rights reserved</p>
+        <div class="footer-icon">
+            <a class="icon" target="_blank" href="https://www.instagram.com/lgmu27/">
+                <img src="build/img/instagram.svg" alt="">
+            </a>
+            <a class="icon" target="_blank" href="https://www.facebook.com/martinezurrieta/">
+                <img src="build/img/facebook.svg" alt="">
+            </a>
+        </div>
+        <p>Design by Lere</p>
+    </footer>
+
+    <script src="build/js/bundle.js"></script>
+    
+</body>
+</html>
